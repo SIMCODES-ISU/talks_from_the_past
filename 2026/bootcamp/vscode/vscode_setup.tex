@@ -1,0 +1,82 @@
+\input{BeamerSettings}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\tiny,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    xleftmargin=0.05\textwidth,
+    xrightmargin=0.45\textwidth	
+}
+
+\newcommand{\inlinecode}[1]{\colorbox{backcolour}{\lstinline{#1}}}
+
+\lstset{style=mystyle}
+
+\author[RMR]{\textbf{Ryan~M.~Richard}}
+\title[VSCode]{Setting up VSCode}
+\institute[Ames]{
+	Scientist II and Adjunct Assistant Professor of Chemistry\\
+	Ames National Laboratory and Iowa State University\\
+	Ames, IA, USA
+} 
+
+\date[5-30-2025]{2025 SIMCODES Bootcamp}
+
+\begin{document}
+\TitleSlide
+
+\TwoColumnSlide{MacOS Install}
+{\BulletList{
+\item Go to \text{https://code.visualstudio.com}
+\item Click ``Download for macOs''
+\item Open installer.
+\item Drag icon to ``Applications''
+\item Open ``Visual Studio Code'' from Launchpad
+}}
+{
+\includegraphics[height=0.33\textheight,keepaspectratio]{macos_download.jpg}
+\includegraphics[width=0.5\textwidth,keepaspectratio]{macos_install.jpg}\includegraphics[width=0.5\textwidth,keepaspectratio]{macos_allow.jpg}
+}
+{}
+
+\TwoColumnSlide{Notes on AI/Agents}
+{
+\BulletList{
+\item VSCode may prompt you to sign in to gain access to AI models/agents.
+\item Do so at your own risk.
+\item You are responsible for every line of code you commit to a repository.
+\item If you let AI develop for you, you must validate the results.
+\item Validation is nearly impossible unless you are experienced already.
+}}
+{}
+{}
+
+\TwoColumnSlide{Acknowledgements}
+{\BulletList{
+	\item NSF for funding the REU.
+	\item ISU and Ames National Lab
+}}
+{
+	\AddPicture{nsf.jpg}
+}
+{}
+
+\end{document}
