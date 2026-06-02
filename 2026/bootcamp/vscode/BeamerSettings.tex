@@ -1,4 +1,3 @@
-\documentclass[11pt]{beamer}
 \usetheme{Boadilla}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amsfonts,amssymb}
@@ -73,6 +72,19 @@
 		\end{itemize}
 	\end{block}	
 }
+
+\newcommand{\ContentSlide}[3]{
+\begin{frame}[squeeze]{#1}
+\setlength{\leftmargini}{0.5cm}
+\setlength{\leftmarginii}{0.5cm}
+\begin{minipage}[c][0.90\textheight][c]{0.9\textwidth}
+\begin{center}
+#2
+\end{center}
+\end{minipage}
+
+#3
+\end{frame}}
 
 %A two-column slide, where arg1 is the title, arg2 is
 %column one, arg3 is column two, and arg4 is a footer
