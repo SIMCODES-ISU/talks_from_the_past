@@ -1,0 +1,21 @@
+\frametitle{\texttt {confttest.py} File}
+\setlength{\leftmargini}{0.25cm}
+\begin{columns}[c,t,totalwidth=1.0\textwidth]
+\begin{column}[c]{0.45\linewidth}
+\BulletList{
+	\item \textit{conftest.py} is automatically loaded by PyTest.
+	\item Used to store common functionality needed throughout tests.
+	\item Advanced features: fixture scope, pytest plugins, hooks
+}
+\end{column}
+\begin{column}[c]{0.45\linewidth}
+\begin{lstlisting}[style=fullwidth,language=python,numbers=left]
+import pytest
+
+@pytest.fixture(scope="function")
+def sample_data():
+    """Fixture that provides sample data for tests."""
+    return {"numbers": [1, 2, 3], "text": "pytest"}
+\end{lstlisting}
+\end{column}
+\end{columns}
